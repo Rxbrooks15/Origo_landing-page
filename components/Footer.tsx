@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
               <span className="text-2xl font-bold tracking-tight">Origo</span>
             </div>
             <p className="text-gray-500 max-w-sm mb-8">
-              Staying inside is draining your life. Go outside and grow your assets with Origo.
+              Staying inside is draining your energy. Go outside and grow your assets with Origo.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10 transition-colors">
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
-          <p>© 2024 Origo App. Collect the light, tell your story.</p>
+          <p>© 2026 Origo App.</p>
           <div className="flex gap-4">
             <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" className="h-6" />
             <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" className="h-6" />

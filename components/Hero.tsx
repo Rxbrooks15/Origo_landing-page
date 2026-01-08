@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
 
   {/* Google Play Store */}
   <a
-    href="https://play.google.com/store/games?hl=en_US"
+    href="https://owobot.fandom.com/wiki/Fish"
     target="_blank"
     rel="noopener noreferrer"
     className="hover:scale-105 transition-transform active:scale-95 cursor-pointer"

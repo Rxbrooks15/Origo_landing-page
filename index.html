@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Origo | Track the Sun, Collect the Light</title>
+    <!-- Tailwind CSS CDN for rapid styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,20 +15,30 @@
             font-family: 'Inter', sans-serif;
             background-color: #0f0a1e;
             color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
         }
+        /* Custom Utility Classes */
         .brand-glow {
             box-shadow: 0 0 80px 20px rgba(139, 92, 246, 0.15);
         }
         .crane-gradient {
             background: linear-gradient(135deg, #2D1B4E 0%, #1a0f2e 100%);
         }
+        /* Smooth scrolling for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 <script type="importmap">
 {
   "imports": {
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
     "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
   }
 }
@@ -35,5 +46,12 @@
 </head>
 <body>
     <div id="root"></div>
+    
+    <!-- 
+      MAIN ENTRY POINT: 
+      The script below tells the browser (and Vite) where the React application starts. 
+      Vite will transform this .tsx file into optimized JavaScript during the build.
+    -->
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>

@@ -1,15 +1,14 @@
 
 import React from 'react';
-import { ChevronRight } from 'lucide-react';
 import Logo from './Logo';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative pt-32 pb-20 overflow-hidden">
-      {/* Background Glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[500px] bg-blue-600/10 blur-[120px] rounded-full -z-10" />
+    <section className="relative pt-32 pb-20 overflow-hidden min-h-[80vh] flex items-center">
+      {/* Background Decorative Glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[500px] bg-blue-600/10 blur-[120px] rounded-full z-0 pointer-events-none" />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-blue-400 text-sm font-medium mb-8 animate-fade-in">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
@@ -43,9 +42,9 @@ const Hero: React.FC = () => {
              <div className="hidden md:block transform rotate-[-5deg] opacity-60">
                 <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=400" alt="App Interface" className="rounded-[3rem] border-[8px] border-zinc-800 shadow-2xl" />
              </div>
-             <div className="relative z-10 scale-110">
+             <div className="relative z-20 scale-110">
                 <img src="https://images.unsplash.com/photo-1556656793-062ff98782ee?auto=format&fit=crop&q=80&w=400" alt="Origo Mobile" className="rounded-[3.5rem] border-[10px] border-zinc-900 shadow-2xl" />
-                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#a3b1a2] rounded-[2rem] flex items-center justify-center shadow-2xl rotate-12 border-4 border-white">
+                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#a3b1a2] rounded-[2rem] flex items-center justify-center shadow-2xl rotate-12 border-4 border-white z-30">
                    <Logo className="w-18 h-18 transform translate-x-1" />
                 </div>
              </div>

@@ -98,24 +98,6 @@ const Features: React.FC = () => {
            </div>
         </div>
 
-        {/* Localization & Support Section */}
-        <div className="mt-32 p-12 rounded-[3rem] bg-gradient-to-r from-orange-500/10 to-purple-600/10 border border-white/10 flex flex-col md:flex-row items-center justify-between gap-12">
-          <div className="max-w-xl text-center md:text-left">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">Every Device. Every Language.</h3>
-            <p className="text-gray-400">Available on iPhone, iPad, and Mac. Translated into English, French, Spanish, Portuguese, Italian, and more.</p>
-          </div>
-          <div className="flex gap-4">
-             <div className="px-6 py-4 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3">
-               <Globe className="text-blue-400" />
-               <span className="font-semibold">Global Localization</span>
-             </div>
-             <div className="px-6 py-4 rounded-2xl bg-white/5 border border-white/10 flex items-center gap-3">
-               <Smartphone className="text-green-400" />
-               <span className="font-semibold">All Apple Devices</span>
-             </div>
-          </div>
-        </div>
-
       </div>
     </section>
   );

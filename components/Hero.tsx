@@ -14,18 +14,21 @@ const Hero: React.FC = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
           </span>
-          Origo 2.0: Now with Origami Marketplace
+          Origo 2.0: The Quest Continues
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight max-w-4xl mx-auto">
-          The Ultimate App for <br />
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-white to-fuchsia-400">
-            Tracking the Sun
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1] max-w-5xl mx-auto">
+          <span className="block text-white">Staying inside is</span>
+          <span className="block text-white">
+            <span className="text-red-500">draining</span> your life.
+          </span>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-white to-fuchsia-400 block py-1">
+            Go outside and grow your assets.
           </span>
         </h1>
 
         <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-          For Photography, Outdoor Adventures, Real Estate, Landscaping, and Solar Energy. Collect light-powered digital origami cranes as you explore.
+          Explore the outdoors to collect digital assets.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
@@ -39,16 +42,16 @@ const Hero: React.FC = () => {
 
         <div className="relative max-w-5xl mx-auto">
            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-end">
-             <div className="hidden md:block transform rotate-[-5deg] opacity-60">
+             <div className="hidden md:block transform rotate-[-5deg] opacity-60 transition-opacity hover:opacity-100 duration-500">
                 <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=400" alt="App Interface" className="rounded-[3rem] border-[8px] border-zinc-800 shadow-2xl" />
              </div>
              <div className="relative z-20 scale-110">
                 <img src="https://images.unsplash.com/photo-1556656793-062ff98782ee?auto=format&fit=crop&q=80&w=400" alt="Origo Mobile" className="rounded-[3.5rem] border-[10px] border-zinc-900 shadow-2xl" />
-                <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#a3b1a2] rounded-[2rem] flex items-center justify-center shadow-2xl rotate-12 border-4 border-white z-30">
-                   <Logo className="w-18 h-18 transform translate-x-1" />
+                <div className="absolute -bottom-6 -right-6 w-24 h-24 z-30 transform rotate-12 transition-transform hover:rotate-0 duration-300">
+                   <Logo className="w-24 h-24 border-4 border-white shadow-2xl" />
                 </div>
              </div>
-             <div className="hidden md:block transform rotate-[5deg] opacity-60">
+             <div className="hidden md:block transform rotate-[5deg] opacity-60 transition-opacity hover:opacity-100 duration-500">
                 <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?auto=format&fit=crop&q=80&w=400" alt="Sun Tracking" className="rounded-[3rem] border-[8px] border-zinc-800 shadow-2xl" />
              </div>
            </div>

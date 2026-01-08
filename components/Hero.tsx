@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1] max-w-5xl mx-auto">
           <span className="block text-white">Staying inside is</span>
           <span className="block text-white">
-            <span className="text-red-500">draining</span> your life.
+            <span className="text-red-500">draining</span> your energy.
           </span>
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-white to-fuchsia-400 block py-1">
             Go outside and grow your assets.

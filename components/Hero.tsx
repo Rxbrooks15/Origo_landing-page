@@ -34,41 +34,32 @@ const Hero: React.FC = () => {
         </p>
 
         {/* App Store Badges */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-          <a href="#" className="hover:scale-105 transition-transform active:scale-95">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
-              alt="Download on the App Store"
-              className="h-[52px]"
-            />
-          </a>
-          <a href="#" className="hover:scale-105 transition-transform active:scale-95">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-              alt="Get it on Google Play"
-              className="h-[52px]"
-            />
-          </a>
-        </div>
+       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+  {/* Apple App Store */}
+  <a
+    href="https://apps.apple.com/us/iphone/today"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:scale-105 transition-transform active:scale-95 cursor-pointer"
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+      alt="Download on the App Store"
+      className="h-[52px]"
+    />
+  </a>
 
-        {/* Single Center Image */}
-        <div className="relative max-w-5xl mx-auto flex justify-center">
-          <div className="relative z-20 scale-110">
-            <img
-              src="https://images.unsplash.com/photo-1556656793-062ff98782ee?auto=format&fit=crop&q=80&w=400"
-              alt="Origo Mobile"
-              className="rounded-[3.5rem] border-[10px] border-zinc-900 shadow-2xl"
-            />
-
-            {/* Logo Overlay */}
-            <div className="absolute -bottom-6 -right-6 w-24 h-24 z-30 transform rotate-12 transition-transform hover:rotate-0 duration-300">
-              <Logo className="w-24 h-24 border-4 border-white shadow-2xl" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Hero;
+  {/* Google Play Store */}
+  <a
+    href="https://play.google.com/store/games?hl=en_US"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:scale-105 transition-transform active:scale-95 cursor-pointer"
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+      alt="Get it on Google Play"
+      className="h-[52px]"
+    />
+  </a>
+</div>

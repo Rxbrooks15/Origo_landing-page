@@ -17,8 +17,8 @@ const Hero: React.FC = () => {
           Origo 2.0: The Quest Continues
         </div>
 
-        {/* Headline */}
-        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1] max-w-5xl mx-auto">
+        {/* Headline (slightly smaller) */}
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-[1.1] max-w-5xl mx-auto">
           <span className="block text-white">Staying inside is</span>
           <span className="block text-white">
             <span className="text-red-500">draining</span> your energy.
@@ -28,12 +28,12 @@ const Hero: React.FC = () => {
           </span>
         </h1>
 
-        {/* Subtext */}
-        <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+        {/* Subtext (slightly smaller) */}
+        <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
           Explore the outdoors to collect digital assets.
         </p>
 
-        {/* App Store Badges (kept) */}
+        {/* App Store Badges */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <a href="#" className="hover:scale-105 transition-transform active:scale-95">
             <img
